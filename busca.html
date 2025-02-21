@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Contato</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Biblioteca  Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <h1>Bus<span class="destaque">c</span>ar<span class="destaque"> C</span>lientes</span>
+    </h1>
+    <p class="subtitle">não perca venda</p>
+
+    <div class="container buscar">
+        <label for="text">Buscar Clientes:</label>
+        <input type="search" class="buscarCliente" placeholder="modelo ou referencia">
+        <div class="resultadoDaBusca"></div>
+        <button class="botao-flutuante"><a href="cadastro.html"><i class="bi bi-arrow-left-circle"></i></a></button>
+
+    </div><!-- container -->
+
+
+    <div class="container-modal">
+        <div class="modal">
+            <h3>Você já mandou Msg pro cliente ?</h3>
+            <div class="btn-container-modal">
+                <button class="sim">Sim</button>
+                <button class="nao">Não</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Importações do Firebase -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+
+    <!-- Seus scripts -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="busca.js"></script>
+</body>
+
+</html>
